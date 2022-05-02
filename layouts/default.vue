@@ -71,9 +71,11 @@ v-if="user"
                 depressed
                 rounded
                 text
+                block
+                @click="logout"
               >
-
-                Logout
+                <v-icon> mdi-logout-variant</v-icon>
+                  Logout
               </v-btn>
             </div>
           </v-list-item-content>
@@ -119,6 +121,16 @@ export default {
   },
   mounted() {
     this.user = JSON.parse(localStorage.getItem('user'));
+  },
+  methods: {
+    async logout() {
+      await this.$apolloHelpers.onLogout()
+      await localStorage.removeItem('user');
+      await localStorage.removeItem('token');
+      await this.$router.push({
+        path: "/login",
+      });
+    }
   }
 }
 </script>
