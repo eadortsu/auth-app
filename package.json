@@ -20,7 +20,7 @@
     "dotenv": "^16.0.0",
     "graphql-tag": "^2.12.6",
     "nuxt": "^2.15.8",
-    "vue": "2.6.6",
+    "vue": "3.2.33",
     "vue-server-renderer": "2.6.6",
     "vue-template-compiler": "2.6.6",
     "vuetify": "^2.6.1",
