@@ -51,12 +51,18 @@ Introduce your projects by taking a screenshot, video recordings or a gif. Try t
 - [Nest.js](https://nestjs.com/)
 - [Nuxt.js](https://nuxtjs.org/)
 - [Vuetify](https://vuetifyjs.com/en/)
+- [Vercel](https://vercel.com/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 What features did you develop?
+- **User story:** I can register a new account
+- **User story:** I can log in
+- **User story:** I can sign out
+- **User story:** After I log in, I can see my profile details - photo, user name, bio, email, full name, email address  and last sign in date
+- **User story:** I can edit my details including: `photo`, `name`, `bio`, `phone`, `email` and `password`
 
 ## How To Use
 
@@ -90,10 +96,4 @@ $ yarn generate
 ```bash
 # unit tests
 $ yarn test
-
-# e2e tests
-$ yarn test:e2e
-
-# test coverage
-$ yarn test:cov
 ```
